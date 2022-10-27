@@ -10,6 +10,6 @@ wss.on("connection", ws => {
     ws.send("Install Gentoo");
 
     ws.on("message", data => {
-        ws.send(data.toString());
+        ws.send("stop");
     })
 });
